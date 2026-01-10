@@ -1,0 +1,50 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build output
+# =========================
+build/
+dist/
+dist-ssr/
+.out/
+.next/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+*.local
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Cache & tools
+# =========================
+.cache/
+.firebase/
+
+# =========================
+# Editor & OS files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
