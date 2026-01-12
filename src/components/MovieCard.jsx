@@ -1,15 +1,22 @@
 import React from 'react'
 import { CDN_IMG_URL } from '../utils/Constant'
 
-const MovieCard = ({ posterPath ,Movie}) => {
+const MovieCard = ({ posterPath, Movie }) => {
 
   const handleMovieClike = () => {
 
-    const query = encodeURIComponent(Movie.title || Movie.name);
+    const query = Movie.title;
 
-    const netflixUrl = `https://www.netflix.com/search?q=${query}`;
+    const movieSlug = query
+      .toLowerCase()
+      .replace(/[:]/g, "")      // remove colon
+      .replace(/[^a-z0-9\s-]/g, "") // remove other special chars
+      .trim()
+      .replace(/\s+/g, "-");    // spaces → hyphens
 
-    window.open(netflixUrl,"_blank");
+    const movieUrl = `https://multimovies.golf/movies/${movieSlug}/`;
+
+    window.open(movieUrl, "_blank");
 
   }
 
