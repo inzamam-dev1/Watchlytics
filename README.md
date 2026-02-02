@@ -1,4 +1,4 @@
-# NetflixGPT 
+# Movix
 
 A Netflix-inspired movie browsing app with AI-powered search.
 
